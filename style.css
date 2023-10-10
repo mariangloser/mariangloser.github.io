@@ -1,0 +1,77 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #111; /* Dark header background color */
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    background-color: #111; /* Dark navigation background color */
+    padding: 10px;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #00f; /* Highlight color on hover */
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #222; /* Dark section background color */
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #111; /* Dark footer background color */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
