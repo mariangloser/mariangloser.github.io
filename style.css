@@ -89,12 +89,12 @@ footer {
 /* Animation for the title */
 @keyframes glow {
     0% {
-        text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
     }
     50% {
-        text-shadow: 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f;
+        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
     }
     100% {
-        text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
     }
 }
