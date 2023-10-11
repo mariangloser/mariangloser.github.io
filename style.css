@@ -29,20 +29,24 @@ nav ul {
     display: flex;
     background-color: #111; /* Dark navigation background color */
     padding: 10px;
+    justify-content: space-between;
 }
 
 nav li {
-    margin: 0 10px;
+    margin: 0;
+    flex-grow: 1; /* Expand to fill available space */
+    text-align: center;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #fff; /* White text color */
     transition: color 0.2s;
+    padding: 15px 20px; /* Increase button size */
 }
 
 nav a:hover {
-    color: #00f; /* Highlight color on hover */
+    color: #00f; /* Change color to blue on hover */
 }
 
 /* Main content styling */
