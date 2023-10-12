@@ -2,21 +2,23 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /*Ubox-sizing: border-box;*/
 }
 
 /* Body styling */
 body {
-    background-color: #333; /* Dark background color */
+    background-color: #000000; /* Dark background color */
     color: #fff; /* White text color */
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header styling */
 header {
-    background-color: #111; /* Dark header background color */
+    background-color: #000000; /* Dark header background color */
     text-align: center;
-    padding: 20px;
+    padding: 60px;
 }
 
 header h1 {
@@ -28,7 +30,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     background-color: #111; /* Dark navigation background color */
-    padding: 10px;
+    padding: 30px;
     justify-content: space-between;
 }
 
@@ -42,7 +44,7 @@ nav a {
     text-decoration: none;
     color: #fff; /* White text color */
     transition: color 0.2s;
-    padding: 15px 20px; /* Increase button size */
+    padding: 20px 20px; /* Increase button size */
 }
 
 nav a:hover {
@@ -51,18 +53,23 @@ nav a:hover {
 
 /* Main content styling */
 main {
-    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 section {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #222; /* Dark section background color */
+    background-color: #000000; /* Dark section background color */
     border-radius: 5px;
+    /* test */
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
 }
 
 h2 {
     font-size: 20px;
+    padding: 10px;
 }
 
 /* Footer styling */
@@ -82,7 +89,7 @@ footer {
 
 /* Additional styling for the futuristic title */
 .futuristic-title {
-    font-size: 36px;
+    font-size: 32px;
     font-family: "Roboto", sans-serif; /* You can choose a futuristic font */
     color: #fff; /* White text color */
     text-transform: uppercase;
@@ -93,7 +100,7 @@ footer {
 /* Animation for the title */
 @keyframes glow {
     0% {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #7d7d7d;
     }
     50% {
         text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
@@ -101,4 +108,23 @@ footer {
     100% {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
     }
+}
+
+/* Section animations */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion){
+    .hidden {
+        transition: None;
+    }
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
 }
