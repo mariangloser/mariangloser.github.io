@@ -30,7 +30,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     background-color: #111; /* Dark navigation background color */
-    padding: 30px;
+    padding: 1vw;
     justify-content: space-between;
 }
 
@@ -40,15 +40,18 @@ nav li {
     text-align: center;
 }
 
+/* Navigation link styling */
 nav a {
     text-decoration: none;
     color: #fff; /* White text color */
-    transition: color 0.2s;
-    padding: 20px 20px; /* Increase button size */
+    padding: 1vw 7vw; /* Increase button size */
+    transition: background-color 0.2s, box-shadow 0.2s; /* Add transitions for smooth animation */
 }
 
 nav a:hover {
-    color: #00f; /* Change color to blue on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white background color */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Subtle white box-shadow */
+    animation: glow 5s linear infinite;
 }
 
 /* Main content styling */
