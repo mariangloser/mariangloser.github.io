@@ -58,7 +58,7 @@ main {
 }
 
 section {
-    background-color: #000000; /* Dark section background color */
+    background-color: #000000;
     border-radius: 5px;
     /* test */
     display: grid;
@@ -66,6 +66,8 @@ section {
     align-content: center;
     min-height: 100vh;
 }
+
+
 
 h2 {
     font-size: 20px;
@@ -113,7 +115,7 @@ footer {
 /* Section animations */
 .hidden {
     opacity: 0;
-    filter: blur(5px);
+    /*filter: blur(5px);*/
     transform: translateX(-100%);
     transition: all 1s;
 }
