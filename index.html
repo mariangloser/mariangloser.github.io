@@ -6,7 +6,7 @@
     <title>My GitHub Pages Website</title>
 
     <link rel="stylesheet" href="style.css">
-    <script defer scr="app.js"></script>
+    <script defer src="app.js"></script>
 
 </head>
 <body>
@@ -24,7 +24,7 @@
     </nav>
 
     <main>
-        <section id="section1">
+        <section id="section1" class = "hidden">
             <h2>About Me</h2>
             <p><center>
             My name is Marián Gloser, a 21 year old from Slovakia and I am a 3rd year student at Bocconi University studying Mathematics for AI. My interests include
@@ -33,17 +33,29 @@
             </center></p>
         </section>
 
-        <section id="section2">
+        <section id="section2" class = "hidden">
             <h2>Biography</h2>
             <p>This is the content of Section 2.</p>
         </section>
 
-        <section id="section3">
-            <h2>Papers</h2>
+        <style>
+            .vspace {
+               margin-bottom: 0.5cm;
+            }
+        </style>
+
+        <section id="section3" class = "hidden">
+            <h2 class = "vspace">Papers</h2>
+            <h3 class = "vspace">Introduction to Irrational Numbers</h3>
+            <p><center>
+            This was the first paper I have ever written, I was 15 years old at the time. As one can imagine, there is nothing
+            groundbreaking about this paper, but it provides a solid foundation in irrational numbers for those interested with some
+            prerequisite mathematical background.
+            </center></p>
             <a href="Introduction to irrational numbers, old(final2).pdf">Introduction to Irrational Numbers</a>
         </section>
 
-        <section id="section4">
+        <section id="section4" class = "hidden">
             <h2>Links</h2>
             <a href="www.linkedin.com/in/marián-gloser-3086a4295"><center>www.linkedin.com/in/marián-gloser-3086a4295</center></a>
             <a href="https://github.com/mariangloser"><center>https://github.com/mariangloser</center></a>
