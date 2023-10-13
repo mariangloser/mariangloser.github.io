@@ -19,6 +19,9 @@ header {
     background-color: #000000; /* Dark header background color */
     text-align: center;
     padding: 60px;
+    background-image: url('stars.png');
+    background-size: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 header h1 {
