@@ -64,7 +64,7 @@ main {
 }
 
 section {
-    background-color: #000000;
+    /*background-color: #000000; */
     border-radius: 5px;
     /* test */
     display: grid;
@@ -136,3 +136,21 @@ footer {
     opacity: 1;
     transform: translateX(0);
 }
+
+#particleCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    display: block;
+    background: #000;
+    pointer-events: none; /* Prevents it from blocking clicks */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
