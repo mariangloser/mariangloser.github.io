@@ -21,7 +21,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 const birthday = new Date(2002,0,10);
 const today = new Date();
 
-if (today.getMonth() >= birthday.getMonth() && today.getDay() >= birthday.getDay()){
+if (today.getMonth() >= birthday.getMonth() && today.getDate() >= birthday.getDate()){
   document.getElementById("birthday").innerHTML = today.getFullYear() - birthday.getFullYear();
 }
 
